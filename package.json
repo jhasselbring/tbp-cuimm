@@ -1,0 +1,30 @@
+{
+  "name": "@tb.p/cuimm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "publish": "npm publish --access public",
+    "patch": "git add . && git commit -m patch-update && git push && npm version patch && npm publish --access public",
+    "minor": "git add . && git commit -m minor-update && git push && npm version minor && npm publish --access public",
+    "major": "git add . && git commit -m major-update && git push && npm version major && npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhasselbring/tbp-cuimm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhasselbring/tbp-cuimm/issues"
+  },
+  "homepage": "https://github.com/jhasselbring/tbp-cuimm#readme",
+  "bin": {
+    "fetch": "./bin/fetch.js"
+  },
+  "dependencies": {
+    "minimist": "^1.2.8"
+  }
+}
